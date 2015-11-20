@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>m3dunit_control</name>
+  <version>0.0.0</version>
+  <description>The rrbot_control package</description>
+
+  <maintainer email="davetcoleman@gmail.com">Dave Coleman</maintainer>
+
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>controller_manager</run_depend>
+
+  <export>
+  </export>
+
+</package>

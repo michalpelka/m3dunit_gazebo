@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="m3d_unit" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+  <xacro:include filename="$(find m3dunit_description)/urdf/m3d.gazebo.xacro" />
+  
+  
+  <!-- Gazebo plugin for ROS Control -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+  
+  <link name="world"/>
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="m3d_link"/>
+  </joint>
+
+  <xacro:m3d_unit/>
+
+
+</robot>
+
